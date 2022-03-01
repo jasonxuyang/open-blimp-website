@@ -4,6 +4,7 @@ import ContentBlock from "../components/home/content-block";
 import Image from "next/image";
 import placeHolder from "../public/img/img_placeholder.png";
 import hero from "../public/img/img_hero.png";
+import IconBlock from "../components/home/icon-block";
 
 export default function Home() {
   return (
@@ -59,6 +60,15 @@ export default function Home() {
           linkText="See Demo"
           href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
         />
+      </section>
+
+      <section id={styles.section_4}>
+        <h2>Get Started with our Demos</h2>
+        <div className={styles.icon_block_container}>
+          <IconBlock text="Source Seeking Demo" href="/home" />
+          <IconBlock text="Joystick Demo" href="/home" />
+          <IconBlock text="Placeholder" href="/home" />
+        </div>
       </section>
     </main>
   );

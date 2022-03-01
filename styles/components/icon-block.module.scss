@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+.icon_block_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc($columnWidth * 4 + $columnGutter * 3);
+  height: 250px;
+  border: solid $white 2px;
+  text-align: center;
+  transition: all 0.2s ease;
+
+  a {
+    font-family: "mb";
+    font-size: 24px;
+    width: calc($columnWidth * 3 + $columnGutter * 2);
+  }
+}
+
+.icon_block_wrapper:hover {
+  background-color: $white;
+  color: $black;
+  cursor: pointer;
+}
