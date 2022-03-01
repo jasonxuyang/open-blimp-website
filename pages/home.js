@@ -55,7 +55,7 @@ export default function Home() {
           <Image src={placeHolder} layout="fill" alt="img" />
         </div>
         <ContentBlock
-          heading="Built with Onboard Computing "
+          heading="Built with Onboard Computing"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
           linkText="See Demo"
           href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
