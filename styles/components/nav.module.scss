@@ -1,0 +1,51 @@
+@import "../variables.scss";
+
+.nav_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease;
+
+  .nav_container {
+    display: flex;
+    flex-direction: row;
+    width: calc($columnWidth * 12 + $columnGutter * 11);
+    justify-content: space-between;
+    align-items: center;
+    padding: $m24 $m24;
+
+    .nav_logo {
+      font-family: "mb";
+      font-size: 24px;
+    }
+
+    .nav_links_container {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        font-family: "mr";
+        font-size: 20px;
+        margin-left: $m48;
+        opacity: 0.6;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.transparent {
+  background-image: transparent;
+}
+
+.opaque {
+  background-color: $black;
+}

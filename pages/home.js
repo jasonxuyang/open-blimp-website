@@ -3,10 +3,14 @@ import ButtonPrimary from "../components/shared/button-primary";
 import ContentBlock from "../components/home/content-block";
 import Image from "next/image";
 import placeHolder from "../public/img/img_placeholder.png";
+import hero from "../public/img/img_hero.png";
 
 export default function Home() {
   return (
     <main className={styles.home_container}>
+      <div className={styles.hero_img_wrapper}>
+        <Image src={hero} className={styles.hero_img} layout="fill" alt="img" />
+      </div>
       <section id={styles.section_hero}>
         <div className={styles.hero_content}>
           <h1>An Open Source Blimp Designed and Built for Research</h1>
