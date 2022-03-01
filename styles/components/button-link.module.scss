@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+.button_link:hover {
+  cursor: pointer;
+}
+
+.button_link::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px $white;
+  margin-top: $m12;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: all 0.2s ease-out;
+}
+.button_link:hover::after {
+  transform: scaleX(0.4);
+}
+
+.link_text {
+  font-family: "mb";
+  font-size: $p;
+  transition: transform 0.2s ease-out;
+}
+
+.button_link:hover .link_text {
+  transform: translate(-$m6);
+}
+
+.link_text::after {
+  content: "->";
+  padding-left: $m6;
+  transition: all 0.2s ease-out;
+}
+
+.button_link:hover .link_text::after {
+  padding-left: $m16;
+}

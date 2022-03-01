@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.button_primary {
+  font-family: "mb";
+  font-size: $h3;
+  padding: $m16 $m32;
+  border: solid 2px $white;
+  transition: all 0.2s ease-in-out;
+}
+
+.button_primary:hover {
+  background-color: $white;
+  color: $black;
+}

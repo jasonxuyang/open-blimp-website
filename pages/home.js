@@ -1,13 +1,61 @@
-import "../styles/home.module.scss";
+import styles from "../styles/pages/home.module.scss";
+import ButtonPrimary from "../components/shared/button-primary";
+import ContentBlock from "../components/home/content-block";
+import Image from "next/image";
+import placeHolder from "../public/img/img_placeholder.png";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <h1>Hello World my name is jason</h1>
-        <p>hi</p>
-        <p>Hello my name is jason</p>
-      </main>
-    </div>
+    <main className={styles.home_container}>
+      <section id={styles.section_hero}>
+        <div className={styles.hero_content}>
+          <h1>An Open Source Blimp Designed and Built for Research</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            scelerisque consectetur nibh, at porta nisl porta ut. Nulla
+            fermentum felis sapien, sed convallis risus luctus et.
+          </p>
+          <ButtonPrimary
+            linkText="Get Started"
+            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          />
+        </div>
+      </section>
+      <section id={styles.section_1}>
+        <div className={`${styles.img_block} ${styles.left_img_block}`}>
+          <Image src={placeHolder} layout="fill" alt="img" />
+        </div>
+        <ContentBlock
+          heading="Built with Onboard Computing"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
+          linkText="See Hardware Specs"
+          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+        />
+      </section>
+
+      <section id={styles.section_2}>
+        <ContentBlock
+          heading="Designed for Research Applications"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
+          linkText="Learn More"
+          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+        />
+        <div className={`${styles.img_block} ${styles.right_img_block}`}>
+          <Image src={placeHolder} layout="fill" alt="img" />
+        </div>
+      </section>
+
+      <section id={styles.section_3}>
+        <div className={`${styles.img_block} ${styles.left_img_block}`}>
+          <Image src={placeHolder} layout="fill" alt="img" />
+        </div>
+        <ContentBlock
+          heading="Stable Flight"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
+          linkText="See Demo"
+          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+        />
+      </section>
+    </main>
   );
 }
