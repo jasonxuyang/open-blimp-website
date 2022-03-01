@@ -65,9 +65,18 @@ export default function Home() {
       <section id={styles.section_4}>
         <h2>Get Started with our Demos</h2>
         <div className={styles.icon_block_container}>
-          <IconBlock text="Source Seeking Demo" href="/home" />
-          <IconBlock text="Joystick Demo" href="/home" />
-          <IconBlock text="Placeholder" href="/home" />
+          <IconBlock
+            text="Source Seeking Demo"
+            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          />
+          <IconBlock
+            text="Joystick Demo"
+            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          />
+          <IconBlock
+            text="Placeholder"
+            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          />
         </div>
       </section>
     </main>

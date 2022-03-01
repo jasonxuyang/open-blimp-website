@@ -30,7 +30,12 @@ export default function Nav() {
           <Link href={"/home"} passHref>
             <a className={styles.nav_link}>Research</a>
           </Link>
-          <Link href={"/home"} passHref>
+          <Link
+            href={
+              "https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+            }
+            passHref
+          >
             <a className={styles.nav_link}>Docs</a>
           </Link>
           <Link href={"/home"} passHref>
