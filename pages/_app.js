@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import Head from "next/head";
 import Nav from "../components/shared/nav";
+import Footer from "../components/shared/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

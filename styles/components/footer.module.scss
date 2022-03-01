@@ -1,0 +1,54 @@
+@import "../variables.scss";
+
+.footer_wrapper {
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease;
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    width: calc($columnWidth * 12 + $columnGutter * 11);
+    align-items: center;
+    padding: $m48 $m24;
+
+    .footer_content_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: calc($columnWidth * 5 + $columnGutter * 4);
+      margin-bottom: $m192;
+
+      h2 {
+        margin-bottom: $m12;
+      }
+
+      p {
+        margin-bottom: $m24;
+      }
+    }
+
+    .footer_links_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+
+      a {
+        font-family: "mr";
+        font-size: 20px;
+        margin-left: $m24;
+        margin-right: $m24;
+        opacity: 0.6;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
