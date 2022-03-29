@@ -13,7 +13,7 @@
 
   a {
     font-family: "mb";
-    font-size: 24px;
+    font-size: $h3;
     width: calc($columnWidth * 3 + $columnGutter * 2);
   }
 }
@@ -31,6 +31,7 @@
 
     a {
       width: calc($columnWidthMobile * 3 + $columnGutterMobile * 2);
+      font-size: $h3Mobile;
     }
   }
 }
