@@ -11,3 +11,9 @@
     margin-bottom: $m32;
   }
 }
+
+@media (max-width: 960px) {
+  .content_block_container {
+    width: calc($columnWidthMobile * 4 + $columnGutterMobile * 3);
+  }
+}

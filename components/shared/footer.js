@@ -7,7 +7,7 @@ export default function Footer() {
     <div className={styles.footer_wrapper}>
       <div className={styles.footer_container}>
         <div className={styles.footer_content_container}>
-          <h2>Get Involed</h2>
+          <h2>Get Involved</h2>
           <p>
             Interested in learning how you could contribute to this open source
             project?

@@ -23,3 +23,14 @@
   color: $black;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 960px) {
+  .icon_block_wrapper {
+    width: calc($columnWidthMobile * 4 + $columnGutterMobile * 3);
+    margin-bottom: $m32;
+
+    a {
+      width: calc($columnWidthMobile * 3 + $columnGutterMobile * 2);
+    }
+  }
+}

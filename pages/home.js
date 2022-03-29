@@ -3,16 +3,21 @@ import ButtonPrimary from "../components/shared/button-primary";
 import ContentBlock from "../components/home/content-block";
 import Image from "next/image";
 import placeHolder from "../public/img/img_placeholder.png";
-import hero from "../public/img/img_hero.png";
+import hero from "../public/img/img_hero.jpg";
 import IconBlock from "../components/home/icon-block";
 
 export default function Home() {
   return (
     <main className={styles.home_container}>
-      <div className={styles.hero_img_wrapper}>
-        <Image src={hero} className={styles.hero_img} layout="fill" alt="img" />
-      </div>
       <section id={styles.section_hero}>
+        <div className={styles.hero_img_wrapper}>
+          <Image
+            src={hero}
+            className={styles.hero_img}
+            layout="fill"
+            alt="img"
+          />
+        </div>
         <div className={styles.hero_content}>
           <h1>An Open Source Blimp Designed and Built for Research</h1>
           <p>
@@ -22,7 +27,7 @@ export default function Home() {
           </p>
           <ButtonPrimary
             linkText="Get Started"
-            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+            href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
           />
         </div>
       </section>
@@ -34,7 +39,7 @@ export default function Home() {
           heading="Designed for Research Applications"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
           linkText="See Hardware Specs"
-          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
         />
       </section>
 
@@ -43,7 +48,7 @@ export default function Home() {
           heading="Stable Flight"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
           linkText="Learn More"
-          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
         />
         <div className={`${styles.img_block} ${styles.right_img_block}`}>
           <Image src={placeHolder} layout="fill" alt="img" />
@@ -58,7 +63,7 @@ export default function Home() {
           heading="Built with Onboard Computing"
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque consectetur nibh, at porta nisl porta ut. Nulla fermentum felis sapien, sed convallis risus luctus et."
           linkText="See Demo"
-          href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+          href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
         />
       </section>
 
@@ -67,15 +72,15 @@ export default function Home() {
         <div className={styles.icon_block_container}>
           <IconBlock
             text="Source Seeking Demo"
-            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+            href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
           />
           <IconBlock
             text="Joystick Demo"
-            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+            href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
           />
           <IconBlock
             text="Placeholder"
-            href="https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
+            href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
           />
         </div>
       </section>

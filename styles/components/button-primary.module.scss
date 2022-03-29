@@ -12,3 +12,12 @@
   background-color: $white;
   color: $black;
 }
+
+@media only screen and (max-width: 960px) {
+  .button_primary {
+    width: calc(($columnWidthMobile * 4) + ($columnGutterMobile * 3));
+    padding: $m16 0;
+    background-color: $white;
+    color: $black;
+  }
+}

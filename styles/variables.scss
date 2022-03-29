@@ -1,3 +1,11 @@
+@function view-width($pixel) {
+  @return (($pixel / 1440) * 100vw);
+}
+
+@function view-width-mobile($pixel) {
+  @return (($pixel / 375) * 100vw);
+}
+
 $black: #000000;
 $white: #ffffff;
 
@@ -24,11 +32,9 @@ $m144: 144px;
 $m192: 192px;
 $m240: 240px;
 
-$columnWidth: 69px;
-$columnGutter: 32px;
+$columnWidth: view-width(69);
+$columnGutter: view-width(32);
 $navOffset: 80px;
 
-$w1Mobile: 19.733vw;
-$w2Mobile: 43.733vw;
-$w3Mobile: 67.467vw;
-$w4Mobile: 91.467vw;
+$columnWidthMobile: view-width-mobile(74);
+$columnGutterMobile: view-width-mobile(16);
