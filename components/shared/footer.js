@@ -17,13 +17,10 @@ export default function Footer() {
 
         <div className={styles.footer_links_container}>
           <Link href={"/home"} passHref>
-            <a className={styles.footer_link}>Facebook</a>
+            <a className={styles.footer_logo}>OpenBlimp</a>
           </Link>
-          <Link href={"/home"} passHref>
-            <a className={styles.footer_link}>Instagram</a>
-          </Link>
-          <Link href={"/home"} passHref>
-            <a className={styles.footer_link}>GTSR</a>
+          <Link href={"https://www.gtsr.gatech.edu/"} passHref>
+            <a className={styles.footer_link}>About GTSR</a>
           </Link>
         </div>
       </div>

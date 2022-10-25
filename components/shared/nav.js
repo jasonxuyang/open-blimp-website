@@ -27,19 +27,14 @@ export default function Nav() {
           <a className={styles.nav_logo}>OpenBlimp</a>
         </Link>
         <div className={styles.nav_links_container}>
-          <Link href={"/home"} passHref>
-            <a className={styles.nav_link}>Research</a>
-          </Link>
-          <Link
-            href={
-              "https://pebble-save-55a.notion.site/OpenBlimp-Docs-382776f0548a43578d7f31991633be28"
-            }
-            passHref
-          >
+          <Link href={"https://open-blimp.notion.site/"} passHref>
             <a className={styles.nav_link}>Docs</a>
           </Link>
-          <Link href={"/home"} passHref>
+          <Link href={"https://github.com/thedancomplex/open-blimp"} passHref>
             <a className={styles.nav_link}>Github</a>
+          </Link>
+          <Link href={"/research"} passHref>
+            <a className={styles.nav_link}>Research</a>
           </Link>
         </div>
       </div>
