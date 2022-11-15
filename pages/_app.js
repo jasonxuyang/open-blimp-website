@@ -2,8 +2,10 @@ import "../styles/globals.scss";
 import Head from "next/head";
 import Nav from "../components/shared/nav";
 import Footer from "../components/shared/footer";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -15,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav />
+      <Nav isHome={router.pathname === "/home"} />
       <Component {...pageProps} />
       <Footer />
     </>

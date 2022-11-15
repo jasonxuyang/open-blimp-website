@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "../../styles/components/nav.module.scss";
 
-export default function Nav() {
+export default function Nav({ isHome = true }) {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const onScroll = (e) => {
@@ -19,7 +19,7 @@ export default function Nav() {
   return (
     <div
       className={`${styles.nav_wrapper} ${
-        isScrolled ? styles.opaque : styles.transparent
+        isScrolled || !isHome ? styles.opaque : styles.transparent
       }`}
     >
       <div className={styles.nav_container}>
