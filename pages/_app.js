@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav isHome={router.pathname === "/home"} />
+      <Nav isHome={router.pathname === "/home" || router.pathname === "/"} />
       <Component {...pageProps} />
       <Footer />
     </>
