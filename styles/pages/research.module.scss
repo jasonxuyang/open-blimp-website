@@ -3,6 +3,7 @@
 .research_container {
   margin-top: $navOffset;
   margin-left: calc($columnWidth * 1 + $columnGutter * 2);
+  margin-bottom: 128px;
 
   .title {
     margin-bottom: $m48;
