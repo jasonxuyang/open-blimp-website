@@ -6,9 +6,11 @@
   align-items: center;
 
   .img_block {
-    position: relative;
-    width: calc($columnWidth * 6 + $columnGutter * 5);
-    height: 450px;
+    img {
+      object-fit: cover;
+      width: calc($columnWidth * 6 + $columnGutter * 5);
+      height: 450px;
+    }
   }
 
   .left_img_block {

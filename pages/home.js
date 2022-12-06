@@ -1,12 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../styles/pages/home.module.scss";
 import ButtonPrimary from "../components/shared/button-primary";
 import ContentBlock from "../components/home/content-block";
-import Image from "next/image";
-import img1 from "../public/img/img1.png";
-import img2 from "../public/img/img2.png";
-import placeHolder from "../public/img/img_placeholder.png";
-import hero from "../public/img/img_hero.jpg";
 import IconBlock from "../components/home/icon-block";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +11,7 @@ export default function Home() {
       <section id={styles.section_hero}>
         <div className={styles.hero_img_wrapper}>
           <Image
-            src={hero}
+            src="/img/img_hero.jpg"
             className={styles.hero_img}
             layout="fill"
             alt="img"
@@ -39,7 +36,7 @@ export default function Home() {
       </section>
       <section id={styles.section_1}>
         <div className={`${styles.img_block} ${styles.left_img_block}`}>
-          <Image src={img1} layout="fill" alt="img" />
+          <img src="/img/img_research_applications.png" alt="img" />
         </div>
         <ContentBlock
           heading="Flexibly Designed for Indoor Applications"
@@ -57,13 +54,13 @@ export default function Home() {
           href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
         />
         <div className={`${styles.img_block} ${styles.right_img_block}`}>
-          <Image src={placeHolder} layout="fill" alt="img" />
+          <img src="/img/img_placeholder.jpg" alt="img" />
         </div>
       </section>
 
       <section id={styles.section_3}>
         <div className={`${styles.img_block} ${styles.left_img_block}`}>
-          <Image src={img2} layout="fill" alt="img" />
+          <img src="/img/img_human_interaction.png" alt="img" />
         </div>
         <ContentBlock
           heading="Safe for Human Interaction Experiments"
