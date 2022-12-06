@@ -42,6 +42,39 @@
   }
 }
 
+.nav_wrapper_mobile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 2;
+
+  .burger {
+    cursor: pointer;
+  }
+}
+
+.nav_mobile_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: $black;
+  padding: 24px;
+
+  a {
+    font-family: "mr";
+    font-size: 48px;
+  }
+}
+
 .transparent {
   background-image: transparent;
 }
