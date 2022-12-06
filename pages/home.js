@@ -54,7 +54,12 @@ export default function Home() {
           href="https://www.notion.so/OpenBlimp-Docs-cbe8a34e08de4f79ae80e9781a82d98c"
         />
         <div className={`${styles.img_block} ${styles.right_img_block}`}>
-          <img src="/img/img_placeholder.jpg" alt="img" />
+          <video autoPlay loop muted>
+            <source
+              src="/img/video_extended_flight.mp4"
+              type="video/mp4"
+            ></source>
+          </video>
         </div>
       </section>
 

@@ -6,7 +6,8 @@
   align-items: center;
 
   .img_block {
-    img {
+    img,
+    video {
       object-fit: cover;
       width: calc($columnWidth * 6 + $columnGutter * 5);
       height: 450px;
@@ -133,7 +134,10 @@
     flex-direction: column-reverse !important;
   }
   .img_block {
-    width: calc($columnWidthMobile * 4 + $columnGutterMobile * 3) !important;
+    img,
+    video {
+      width: calc($columnWidthMobile * 4 + $columnGutterMobile * 3) !important;
+    }
   }
 
   .left_img_block {
